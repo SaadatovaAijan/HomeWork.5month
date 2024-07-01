@@ -1,5 +1,5 @@
 //
-//  OnboardingViewPresenter.swift
+//  OnboardingView.swift
 //  HomeWork2.5month
 //
 //  Created by Aijan Saadatova on 1/7/24.
@@ -11,14 +11,15 @@ var currentPage = 0
 
 class OnboardingView: UIViewController  {
     
-    var StructBoarding: [structBoarding] = []
+    var structOnboarding: [StructOnboarding] = []
     
-    private lazy var onBoardingCollectionView: UICollectionView = {
+    private lazy var onboardingCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
+        
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        view.register(OnBoardCell.self, forCellWithReuseIdentifier: OnBoardCell.reuseID)
+        view.register(OnboardingCell.self, forCellWithReuseIdentifier: OnboardingCell.reuseID)
         view.dataSource = self
         view.delegate = self
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -61,28 +62,29 @@ class OnboardingView: UIViewController  {
         setupConstrains()
         setupButtons()
         setupParamets()
-        onBoardingCollectionView.reloadData()
+        onboardingCollectionView.reloadData()
         DispatchQueue.main.async {
             self.scrollToCurrentPage(animated: false)
         }
+                
     }
     
     func test() {
-        guard StructBoarding.count > currentPage + 0 else { return }
+        guard structOnboarding.count > currentPage + 0 else { return }
         
-        onBoardingCollectionView.isPagingEnabled = false
-        onBoardingCollectionView.scrollToItem(at: IndexPath(item: currentPage + 0, section: 0), at: .bottom, animated: true)
-        onBoardingCollectionView.isPagingEnabled = true
+        onboardingCollectionView.isPagingEnabled = false
+        onboardingCollectionView.scrollToItem(at: IndexPath(item: currentPage + 0, section: 0), at: .bottom, animated: true)
+        onboardingCollectionView.isPagingEnabled = true
     }
     
     private func setupConstrains() {
-        view.addSubview(onBoardingCollectionView)
+        view.addSubview(onboardingCollectionView)
         view.addSubview(uiPageControl)
         NSLayoutConstraint.activate([
-            onBoardingCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
-            onBoardingCollectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
-            onBoardingCollectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
-            onBoardingCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            onboardingCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+            onboardingCollectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
+            onboardingCollectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
+            onboardingCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
             uiPageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -300),
             uiPageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor)
@@ -90,21 +92,13 @@ class OnboardingView: UIViewController  {
     }
     
     private func setupParamets() {
-        StructBoarding = [
-            structBoarding(image: "first",
-                            label: "Welcome to The Note",
-                            secondLabel: "Welcome to The Note – your new companion for tasks, goals, health – all in one place. Let's get started!."),
-            structBoarding(image: "second",
-                            label: "Set Up Your Profile",
-                            secondLabel: "Now that you're with us, let's get to know each other better. Fill out your profile, share your interests, and set your goals."),
-            structBoarding(image: "third",
-                            label: "Dive into The Note",
-
-secondLabel: "You're fully equipped to dive into the world of The Note. Remember, we're here to assist you every step of the way. Ready to start? Let's go!")
+        structOnboarding = [
+            StructOnboarding(image: "first", label: "Welcome to The Note", secondLabel: "Welcome to The Note – your new companion for tasks, goals, health – all in one place. Let's get started!."),
+            StructOnboarding(image: "second", label: "Set Up Your Profile", secondLabel: "Now that you're with us, let's get to know each other better. Fill out your profile, share your interests, and set your goals."),
+            StructOnboarding(image: "third", label: "Dive into The Note", secondLabel: "You're fully equipped to dive into the world of The Note. Remember, we're here to assist you every step of the way. Ready to start? Let's go!")
         ]
-        onBoardingCollectionView.reloadData()
+        onboardingCollectionView.reloadData()
     }
-    
     
     private func setupButtons() {
         view.addSubview(skipButton)
@@ -123,8 +117,8 @@ secondLabel: "You're fully equipped to dive into the world of The Note. Remember
     }
     
     @objc private func nextButtonTapped() {
-        UserDefaults.standard.set(true, forKey: "One_Board_cell")
-        if currentPage < StructBoarding.count - 1 {
+        UserDefaults.standard.set(true, forKey: "Onboarding_cell")
+        if currentPage < structOnboarding.count - 1 {
             currentPage += 1
             scrollToCurrentPage(animated: true)
         } else {
@@ -134,9 +128,9 @@ secondLabel: "You're fully equipped to dive into the world of The Note. Remember
     
     private func scrollToCurrentPage(animated: Bool) {
         let indexPath = IndexPath(item: currentPage, section: 0)
-        onBoardingCollectionView.isPagingEnabled = false
-        onBoardingCollectionView.scrollToItem(at: indexPath, at: .bottom, animated: animated)
-        onBoardingCollectionView.isPagingEnabled = true
+        onboardingCollectionView.isPagingEnabled = false
+        onboardingCollectionView.scrollToItem(at: indexPath, at: .bottom, animated: animated)
+        onboardingCollectionView.isPagingEnabled = true
         uiPageControl.currentPage = currentPage
     }
     
@@ -149,24 +143,21 @@ secondLabel: "You're fully equipped to dive into the world of The Note. Remember
         let vc = MainTabBarController()
         navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
 
-extension OnBoardingView: UICollectionViewDataSource {
+extension OnboardingView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return StructBoarding.count
+        return structOnboarding.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OnBoardCell.reuseID, for: indexPath) as! OnBoardCell
-        cell.configure(with: StructBoarding[indexPath.row])
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OnboardingCell.reuseID, for: indexPath) as! OnboardingCell
+        cell.configure(with: structOnboarding[indexPath.row])
         return cell
     }
-    
-    
 }
 
-extension OnBoardingView: UICollectionViewDelegateFlowLayout {
+extension OnboardingView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }

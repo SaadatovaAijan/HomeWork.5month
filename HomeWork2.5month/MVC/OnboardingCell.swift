@@ -1,5 +1,5 @@
 //
-//  OnboardingCoordinator.swift
+//  OnboardingCell.swift
 //  HomeWork2.5month
 //
 //  Created by Aijan Saadatova on 1/7/24.
@@ -9,7 +9,7 @@ import UIKit
 
 class OnboardingCell: UICollectionViewCell {
     
-    static var reuseID = "One_Board_cell"
+    static var reuseID = "Onboarding_cell"
     
     let myImage: UIImageView = {
         let view = UIImageView()
@@ -58,7 +58,7 @@ class OnboardingCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with data: structBoarding) {
+    func configure(with data: StructOnboarding) {
         myImage.image = UIImage(named: data.image)
         myLabel.text = data.label
         secondLabel.text = data.secondLabel

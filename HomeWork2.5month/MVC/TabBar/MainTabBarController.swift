@@ -20,6 +20,8 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         view.backgroundColor = .white
         tabBar.isHidden = true
+        navigationItem.hidesBackButton = true
+        
         setupConstraints()
         configureViewControllers()
     }

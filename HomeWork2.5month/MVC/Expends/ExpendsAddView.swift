@@ -5,4 +5,12 @@
 //  Created by Aijan Saadatova on 20/6/24.
 //
 
-import Foundation
+import UIKit
+
+class ExpendsAddView: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemBackground
+    }
+}

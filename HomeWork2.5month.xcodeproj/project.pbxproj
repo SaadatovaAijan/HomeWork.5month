@@ -9,21 +9,50 @@
 /* Begin PBXBuildFile section */
 		C86A6FAE2C240D8B00612375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FAD2C240D8B00612375 /* AppDelegate.swift */; };
 		C86A6FB02C240D8B00612375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FAF2C240D8B00612375 /* SceneDelegate.swift */; };
-		C86A6FB22C240D8B00612375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FB12C240D8B00612375 /* ViewController.swift */; };
-		C86A6FB52C240D8B00612375 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C86A6FB42C240D8B00612375 /* Base */; };
+		C86A6FB22C240D8B00612375 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FB12C240D8B00612375 /* MainTabBarController.swift */; };
 		C86A6FB72C240D8D00612375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86A6FB62C240D8D00612375 /* Assets.xcassets */; };
 		C86A6FBA2C240D8D00612375 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C86A6FB92C240D8D00612375 /* Base */; };
+		C86A6FCA2C240EDE00612375 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FC92C240EDE00612375 /* MainTabBar.swift */; };
+		C86A6FCC2C240F3400612375 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FCB2C240F3400612375 /* Home.swift */; };
+		C86A6FCE2C240F4600612375 /* HomeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FCD2C240F4600612375 /* HomeBottomView.swift */; };
+		C86A6FD02C240F5900612375 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FCF2C240F5900612375 /* HomeModel.swift */; };
+		C86A6FD22C240F6A00612375 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FD12C240F6A00612375 /* ProfileView.swift */; };
+		C86A6FD42C240F7D00612375 /* ExpendsAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FD32C240F7D00612375 /* ExpendsAddView.swift */; };
+		C86A6FD62C240FBC00612375 /* ACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FD52C240FBC00612375 /* ACell.swift */; };
+		C86A6FD82C240FC700612375 /* BCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FD72C240FC700612375 /* BCell.swift */; };
+		C86A6FFF2C314C0E00612375 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A6FFE2C314C0E00612375 /* SettingsView.swift */; };
+		C86A70012C314C6E00612375 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A70002C314C6D00612375 /* SettingsController.swift */; };
+		C86A70032C314C7A00612375 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A70022C314C7A00612375 /* SettingsModel.swift */; };
+		C86A70052C314C9600612375 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A70042C314C9600612375 /* SettingsCell.swift */; };
+		C86A70072C31D2EF00612375 /* StructOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A70062C31D2EF00612375 /* StructOnboarding.swift */; };
+		C86A700A2C31D7DC00612375 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C86A70092C31D7DC00612375 /* SnapKit */; };
+		C86A700F2C329E5700612375 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A700E2C329E5700612375 /* OnboardingView.swift */; };
+		C86A70112C329F9300612375 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A70102C329F9300612375 /* OnboardingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C86A6FAA2C240D8B00612375 /* HomeWork2.5month.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork2.5month.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86A6FAD2C240D8B00612375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C86A6FAF2C240D8B00612375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C86A6FB12C240D8B00612375 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C86A6FB42C240D8B00612375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C86A6FB12C240D8B00612375 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C86A6FB62C240D8D00612375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C86A6FB92C240D8D00612375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C86A6FBB2C240D8D00612375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C86A6FC92C240EDE00612375 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		C86A6FCB2C240F3400612375 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C86A6FCD2C240F4600612375 /* HomeBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomView.swift; sourceTree = "<group>"; };
+		C86A6FCF2C240F5900612375 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		C86A6FD12C240F6A00612375 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C86A6FD32C240F7D00612375 /* ExpendsAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpendsAddView.swift; sourceTree = "<group>"; };
+		C86A6FD52C240FBC00612375 /* ACell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACell.swift; sourceTree = "<group>"; };
+		C86A6FD72C240FC700612375 /* BCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCell.swift; sourceTree = "<group>"; };
+		C86A6FFE2C314C0E00612375 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C86A70002C314C6D00612375 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		C86A70022C314C7A00612375 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		C86A70042C314C9600612375 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		C86A70062C31D2EF00612375 /* StructOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructOnboarding.swift; sourceTree = "<group>"; };
+		C86A700E2C329E5700612375 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C86A70102C329F9300612375 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86A700A2C31D7DC00612375 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +86,101 @@
 		C86A6FAC2C240D8B00612375 /* HomeWork2.5month */ = {
 			isa = PBXGroup;
 			children = (
-				C86A6FAD2C240D8B00612375 /* AppDelegate.swift */,
-				C86A6FAF2C240D8B00612375 /* SceneDelegate.swift */,
-				C86A6FB12C240D8B00612375 /* ViewController.swift */,
-				C86A6FB32C240D8B00612375 /* Main.storyboard */,
-				C86A6FB62C240D8D00612375 /* Assets.xcassets */,
-				C86A6FB82C240D8D00612375 /* LaunchScreen.storyboard */,
+				C86A6FC22C240DB400612375 /* Delegate */,
+				C86A6FC32C240DC200612375 /* MVC */,
+				C86A6FC12C240D9C00612375 /* Resources */,
 				C86A6FBB2C240D8D00612375 /* Info.plist */,
 			);
 			path = HomeWork2.5month;
+			sourceTree = "<group>";
+		};
+		C86A6FC12C240D9C00612375 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C86A6FB62C240D8D00612375 /* Assets.xcassets */,
+				C86A6FB82C240D8D00612375 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C86A6FC22C240DB400612375 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C86A6FAD2C240D8B00612375 /* AppDelegate.swift */,
+				C86A6FAF2C240D8B00612375 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		C86A6FC32C240DC200612375 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				C86A70062C31D2EF00612375 /* StructOnboarding.swift */,
+				C86A700E2C329E5700612375 /* OnboardingView.swift */,
+				C86A70102C329F9300612375 /* OnboardingCell.swift */,
+				C86A6FFD2C314BD600612375 /* Settings */,
+				C86A6FC72C240E1500612375 /* TabBar */,
+				C86A6FC42C240E0800612375 /* Home */,
+				C86A6FC82C240E1900612375 /* Profile */,
+				C86A6FC62C240E1000612375 /* Expends */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		C86A6FC42C240E0800612375 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C86A6FC52C240E0C00612375 /* Cells */,
+				C86A6FCB2C240F3400612375 /* Home.swift */,
+				C86A6FCD2C240F4600612375 /* HomeBottomView.swift */,
+				C86A6FCF2C240F5900612375 /* HomeModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C86A6FC52C240E0C00612375 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C86A6FD52C240FBC00612375 /* ACell.swift */,
+				C86A6FD72C240FC700612375 /* BCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C86A6FC62C240E1000612375 /* Expends */ = {
+			isa = PBXGroup;
+			children = (
+				C86A6FD32C240F7D00612375 /* ExpendsAddView.swift */,
+			);
+			path = Expends;
+			sourceTree = "<group>";
+		};
+		C86A6FC72C240E1500612375 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C86A6FB12C240D8B00612375 /* MainTabBarController.swift */,
+				C86A6FC92C240EDE00612375 /* MainTabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C86A6FC82C240E1900612375 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C86A6FD12C240F6A00612375 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C86A6FFD2C314BD600612375 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C86A6FFE2C314C0E00612375 /* SettingsView.swift */,
+				C86A70002C314C6D00612375 /* SettingsController.swift */,
+				C86A70022C314C7A00612375 /* SettingsModel.swift */,
+				C86A70042C314C9600612375 /* SettingsCell.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +199,9 @@
 			dependencies = (
 			);
 			name = HomeWork2.5month;
+			packageProductDependencies = (
+				C86A70092C31D7DC00612375 /* SnapKit */,
+			);
 			productName = HomeWork2.5month;
 			productReference = C86A6FAA2C240D8B00612375 /* HomeWork2.5month.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +230,9 @@
 				Base,
 			);
 			mainGroup = C86A6FA12C240D8B00612375;
+			packageReferences = (
+				C86A70082C31D7DC00612375 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C86A6FAB2C240D8B00612375 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +249,6 @@
 			files = (
 				C86A6FB72C240D8D00612375 /* Assets.xcassets in Resources */,
 				C86A6FBA2C240D8D00612375 /* Base in Resources */,
-				C86A6FB52C240D8B00612375 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +259,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C86A6FB22C240D8B00612375 /* ViewController.swift in Sources */,
+				C86A6FD22C240F6A00612375 /* ProfileView.swift in Sources */,
+				C86A70012C314C6E00612375 /* SettingsController.swift in Sources */,
+				C86A700F2C329E5700612375 /* OnboardingView.swift in Sources */,
+				C86A6FCE2C240F4600612375 /* HomeBottomView.swift in Sources */,
+				C86A6FCA2C240EDE00612375 /* MainTabBar.swift in Sources */,
+				C86A6FB22C240D8B00612375 /* MainTabBarController.swift in Sources */,
+				C86A70072C31D2EF00612375 /* StructOnboarding.swift in Sources */,
+				C86A6FD02C240F5900612375 /* HomeModel.swift in Sources */,
+				C86A6FD62C240FBC00612375 /* ACell.swift in Sources */,
+				C86A6FCC2C240F3400612375 /* Home.swift in Sources */,
+				C86A6FD82C240FC700612375 /* BCell.swift in Sources */,
+				C86A70032C314C7A00612375 /* SettingsModel.swift in Sources */,
+				C86A70112C329F9300612375 /* OnboardingCell.swift in Sources */,
 				C86A6FAE2C240D8B00612375 /* AppDelegate.swift in Sources */,
+				C86A6FFF2C314C0E00612375 /* SettingsView.swift in Sources */,
+				C86A6FD42C240F7D00612375 /* ExpendsAddView.swift in Sources */,
 				C86A6FB02C240D8B00612375 /* SceneDelegate.swift in Sources */,
+				C86A70052C314C9600612375 /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C86A6FB32C240D8B00612375 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C86A6FB42C240D8B00612375 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C86A6FB82C240D8D00612375 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +424,6 @@
 				INFOPLIST_FILE = HomeWork2.5month/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +450,6 @@
 				INFOPLIST_FILE = HomeWork2.5month/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +487,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C86A70082C31D7DC00612375 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C86A70092C31D7DC00612375 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C86A70082C31D7DC00612375 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C86A6FA22C240D8B00612375 /* Project object */;
 }
