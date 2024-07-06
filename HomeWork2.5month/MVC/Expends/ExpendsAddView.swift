@@ -13,4 +13,9 @@ class ExpendsAddView: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
     }
+    
+}
+
+protocol ExpendsTabbarControllerDelegate: AnyObject {
+    func didAppTap()
 }

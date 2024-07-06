@@ -7,18 +7,12 @@
 
 import UIKit
 
-//ARC - Automatic Reference Counting (Автоматический подсчет ссылок)
-//strong - cильная ссылка
-//weak - cлабая ссылка (можно ссылку оставить опциональной) прибавляет + 1
-//unowned - cлабая ссылка (обязательно проинициализировать) прибавляет + 1
-
 protocol SettingsViewProtocol: AnyObject {
     
 }
 
 class SettingsView: UIViewController {
     
-   //ccылаемся на контроллер
     private var controller: SettingsControllerToViewProtocol?
     
     private var settings: [Settings] = [Settings(image: "globe", title: "Выбрать язык", type: .descritpion, description: "русский"), Settings(image: "moon", title: "Темная тема", type: .withSwitch), Settings(image: "trash", title: "Очистить данные", type: .standart)]
@@ -28,7 +22,7 @@ class SettingsView: UIViewController {
         view.register(SettingsCell.self, forCellReuseIdentifier: SettingsCell.reuseId)
         view.dataSource = self
         view.delegate = self
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .clear
         return view
     }()
     
@@ -36,18 +30,17 @@ class SettingsView: UIViewController {
         super.viewDidLoad()
         title = "Settings"
         view.backgroundColor = .systemBackground
-        controller = SettingsController(view: self) //+2
+        controller = SettingsController(view: self)
         setupConstraints()
         
         let isDarkTheme = UserDefaults.standard.bool(forKey: "darkTheme")
-        print(isDarkTheme)
         if isDarkTheme == true {
             view.overrideUserInterfaceStyle = .dark
         } else {
             view.overrideUserInterfaceStyle = .light
         }
-        
-    }
+        print(isDarkTheme)
+    }    
     
     deinit {
         print("SettingView is deinitialized")
@@ -80,8 +73,6 @@ extension SettingsView: UITableViewDataSource {
         cell.delegate = self
         return cell
     }
-    
-    
 }
 
 extension SettingsView: UITableViewDelegate {

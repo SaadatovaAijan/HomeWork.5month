@@ -15,7 +15,7 @@ protocol SettingsControllerToModelProtocol: AnyObject {
 }
 
 class SettingsController {
-    //храним ссылки на view и model
+  
     private weak var view: SettingsViewProtocol?
     private var model: SettingsModelProtocol?
     

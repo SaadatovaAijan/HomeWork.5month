@@ -28,6 +28,10 @@
 		C86A700A2C31D7DC00612375 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C86A70092C31D7DC00612375 /* SnapKit */; };
 		C86A700F2C329E5700612375 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A700E2C329E5700612375 /* OnboardingView.swift */; };
 		C86A70112C329F9300612375 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A70102C329F9300612375 /* OnboardingCell.swift */; };
+		C86A70192C365EA400612375 /* ExpensesTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A70182C365EA400612375 /* ExpensesTabBarController.swift */; };
+		C86A701B2C365F1C00612375 /* AddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A701A2C365F1C00612375 /* AddCell.swift */; };
+		C86A701D2C365F2800612375 /* IncomesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A701C2C365F2800612375 /* IncomesView.swift */; };
+		C86A701F2C365F3600612375 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A701E2C365F3600612375 /* ExpensesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,10 @@
 		C86A70062C31D2EF00612375 /* StructOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructOnboarding.swift; sourceTree = "<group>"; };
 		C86A700E2C329E5700612375 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C86A70102C329F9300612375 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		C86A70182C365EA400612375 /* ExpensesTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTabBarController.swift; sourceTree = "<group>"; };
+		C86A701A2C365F1C00612375 /* AddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCell.swift; sourceTree = "<group>"; };
+		C86A701C2C365F2800612375 /* IncomesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesView.swift; sourceTree = "<group>"; };
+		C86A701E2C365F3600612375 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +123,7 @@
 		C86A6FC32C240DC200612375 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				C86A70062C31D2EF00612375 /* StructOnboarding.swift */,
-				C86A700E2C329E5700612375 /* OnboardingView.swift */,
-				C86A70102C329F9300612375 /* OnboardingCell.swift */,
-				C86A6FFD2C314BD600612375 /* Settings */,
+				C86A70172C344A9E00612375 /* Onboarding */,
 				C86A6FC72C240E1500612375 /* TabBar */,
 				C86A6FC42C240E0800612375 /* Home */,
 				C86A6FC82C240E1900612375 /* Profile */,
@@ -151,6 +156,10 @@
 			isa = PBXGroup;
 			children = (
 				C86A6FD32C240F7D00612375 /* ExpendsAddView.swift */,
+				C86A70182C365EA400612375 /* ExpensesTabBarController.swift */,
+				C86A701A2C365F1C00612375 /* AddCell.swift */,
+				C86A701C2C365F2800612375 /* IncomesView.swift */,
+				C86A701E2C365F3600612375 /* ExpensesView.swift */,
 			);
 			path = Expends;
 			sourceTree = "<group>";
@@ -168,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				C86A6FD12C240F6A00612375 /* ProfileView.swift */,
+				C86A6FFD2C314BD600612375 /* Settings */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -181,6 +191,16 @@
 				C86A70042C314C9600612375 /* SettingsCell.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		C86A70172C344A9E00612375 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C86A70062C31D2EF00612375 /* StructOnboarding.swift */,
+				C86A700E2C329E5700612375 /* OnboardingView.swift */,
+				C86A70102C329F9300612375 /* OnboardingCell.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,14 +286,18 @@
 				C86A6FCA2C240EDE00612375 /* MainTabBar.swift in Sources */,
 				C86A6FB22C240D8B00612375 /* MainTabBarController.swift in Sources */,
 				C86A70072C31D2EF00612375 /* StructOnboarding.swift in Sources */,
+				C86A701F2C365F3600612375 /* ExpensesView.swift in Sources */,
 				C86A6FD02C240F5900612375 /* HomeModel.swift in Sources */,
+				C86A701D2C365F2800612375 /* IncomesView.swift in Sources */,
 				C86A6FD62C240FBC00612375 /* ACell.swift in Sources */,
+				C86A701B2C365F1C00612375 /* AddCell.swift in Sources */,
 				C86A6FCC2C240F3400612375 /* Home.swift in Sources */,
 				C86A6FD82C240FC700612375 /* BCell.swift in Sources */,
 				C86A70032C314C7A00612375 /* SettingsModel.swift in Sources */,
 				C86A70112C329F9300612375 /* OnboardingCell.swift in Sources */,
 				C86A6FAE2C240D8B00612375 /* AppDelegate.swift in Sources */,
 				C86A6FFF2C314C0E00612375 /* SettingsView.swift in Sources */,
+				C86A70192C365EA400612375 /* ExpensesTabBarController.swift in Sources */,
 				C86A6FD42C240F7D00612375 /* ExpendsAddView.swift in Sources */,
 				C86A6FB02C240D8B00612375 /* SceneDelegate.swift in Sources */,
 				C86A70052C314C9600612375 /* SettingsCell.swift in Sources */,

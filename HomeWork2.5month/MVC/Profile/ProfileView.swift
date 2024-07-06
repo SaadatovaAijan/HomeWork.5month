@@ -16,9 +16,19 @@ class Test {
 class ProfileView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
+        view.backgroundColor = .systemBackground
         setupNavigationItem()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            if UserDefaults.standard.bool(forKey: "darkTheme") == false {
+                view.overrideUserInterfaceStyle = .light
+            } else {
+                view.overrideUserInterfaceStyle = .dark
+            }
+            
+        }
     
     private func setupNavigationItem() {
         let settingsButton = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .plain, target: self, action: #selector(settingsButtonTapped))

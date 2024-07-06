@@ -47,7 +47,7 @@ class MainTabBarController: UITabBarController {
         homeView.title = "Home"
         let vc1 = UINavigationController(rootViewController: homeView)
         
-        let expendsAddView = ExpendsAddView()
+        let expendsAddView = ExpensesTabBarController()
         expendsAddView.title = "Expends"
         let vc2 = UINavigationController(rootViewController: expendsAddView)
         
