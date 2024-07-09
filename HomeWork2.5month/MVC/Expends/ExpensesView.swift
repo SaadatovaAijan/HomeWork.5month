@@ -9,7 +9,7 @@ import UIKit
 
 class ExpensesView: UIViewController {
     
-    var dataList: [AddCellData] = []
+    var dataList: [AccountingModel ] = []
     
     var expendsTabBarController: ExpensesTabBarController?
     
@@ -28,6 +28,7 @@ class ExpensesView: UIViewController {
         view.backgroundColor = .systemBackground
         expendsTabBarController?.expendsTabBarControllerDelegate = self
         setupConstraints()
+        dataList = CoreDataManager.shared.fetchExpenses()
         expensesCollectionView.reloadData()
     }
     
@@ -68,23 +69,38 @@ extension ExpensesView: UICollectionViewDelegateFlowLayout {
 extension ExpensesView: ExpendsTabBarControllerDelegate {
     func didAddTap() {
         let alert = UIAlertController(title: "Расходы", message: "Добавьте расходы", preferredStyle: .alert)
-        var amounTextField = UITextField()
         var titleTextField = UITextField()
         titleTextField.placeholder = "Введите название"
+        var amounTextField = UITextField()
         amounTextField.placeholder = "Введите сумму"
         let acceptAction = UIAlertAction(title: "Да", style: .cancel) { action in
-            self.dataList.append(AddCellData(title: titleTextField.text ?? "", amount: Int(amounTextField.text ?? "0") ?? 0))
-
+            
+            let id = UUID()
+            let title = titleTextField.text ?? ""
+            let amount = Double(amounTextField.text ?? "0")
+            let date = Date()
+            let category = "expenses"
+            let image = "star"
+            let color = "orange"
+            
+            CoreDataManager.shared.addAccounting(id: id, title: title, amount: amount ?? 0 , date: date, category: category, image: image, color: color)
+            
+            self.dataList =
+            CoreDataManager.shared.fetchExpenses()
             self.expensesCollectionView.reloadData()
             print(self.dataList)
+            
         }
         
         let declineAction = UIAlertAction(title: "Нет", style: .default) { action in
             
         }
+        
         alert.addTextField { textField in
             titleTextField = textField
+            
         }
+        
         alert.addTextField { textField in
             amounTextField = textField
         }

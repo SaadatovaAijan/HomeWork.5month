@@ -9,7 +9,7 @@ import UIKit
 
 class IncomesView: UIViewController {
     
-    var dataList: [AddCellData ] = []
+    var dataList: [AccountingModel ] = []
     
     var expendsTabBarController: ExpensesTabBarController?
     
@@ -28,6 +28,7 @@ class IncomesView: UIViewController {
         view.backgroundColor = .systemBackground
         expendsTabBarController?.expendsTabBarControllerDelegate = self
         setupConstraints()
+        dataList = CoreDataManager.shared.fetchIncomes()
         incomesCollectionView.reloadData()
     }
     
@@ -73,8 +74,17 @@ extension IncomesView: ExpendsTabBarControllerDelegate {
         titleTextField.placeholder = "Введите название"
         amountTextField.placeholder = "Введите сумму"
         let acceptAction = UIAlertAction(title: "Да", style: .cancel) { action in
-            self.dataList.append(AddCellData(title: titleTextField.text ?? "", amount: Int(amountTextField.text ?? "0") ?? 0))
-
+            let id = UUID()
+            let title = titleTextField.text ?? ""
+            let amount = Double(amountTextField.text ?? "0")
+            let date = Date()
+            let category = "incomes"
+            let image = "star"
+            let color = "green"
+            
+            CoreDataManager.shared.addAccounting(id: id, title: title, amount: amount ?? 0 , date: date, category: category, image: image, color: color)
+            
+            self.dataList = CoreDataManager.shared.fetchIncomes()
             self.incomesCollectionView.reloadData()
             print(self.dataList)
         }

@@ -32,6 +32,10 @@
 		C86A701B2C365F1C00612375 /* AddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A701A2C365F1C00612375 /* AddCell.swift */; };
 		C86A701D2C365F2800612375 /* IncomesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A701C2C365F2800612375 /* IncomesView.swift */; };
 		C86A701F2C365F3600612375 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A701E2C365F3600612375 /* ExpensesView.swift */; };
+		C86A702E2C3D934400612375 /* AccountingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C86A702C2C3D934400612375 /* AccountingModel.xcdatamodeld */; };
+		C86A70312C3D957B00612375 /* AccountingModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A702F2C3D957B00612375 /* AccountingModel+CoreDataClass.swift */; };
+		C86A70322C3D957B00612375 /* AccountingModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A70302C3D957B00612375 /* AccountingModel+CoreDataProperties.swift */; };
+		C86A70362C3D965D00612375 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86A70352C3D965D00612375 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,10 @@
 		C86A701A2C365F1C00612375 /* AddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCell.swift; sourceTree = "<group>"; };
 		C86A701C2C365F2800612375 /* IncomesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomesView.swift; sourceTree = "<group>"; };
 		C86A701E2C365F3600612375 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		C86A702D2C3D934400612375 /* AccountingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AccountingModel.xcdatamodel; sourceTree = "<group>"; };
+		C86A702F2C3D957B00612375 /* AccountingModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountingModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C86A70302C3D957B00612375 /* AccountingModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountingModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C86A70352C3D965D00612375 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,9 @@
 		C86A6FA12C240D8B00612375 = {
 			isa = PBXGroup;
 			children = (
+				C86A702F2C3D957B00612375 /* AccountingModel+CoreDataClass.swift */,
+				C86A70302C3D957B00612375 /* AccountingModel+CoreDataProperties.swift */,
+				C86A702C2C3D934400612375 /* AccountingModel.xcdatamodeld */,
 				C86A6FAC2C240D8B00612375 /* HomeWork2.5month */,
 				C86A6FAB2C240D8B00612375 /* Products */,
 			);
@@ -94,6 +105,7 @@
 		C86A6FAC2C240D8B00612375 /* HomeWork2.5month */ = {
 			isa = PBXGroup;
 			children = (
+				C86A70332C3D95FF00612375 /* Managers */,
 				C86A6FC22C240DB400612375 /* Delegate */,
 				C86A6FC32C240DC200612375 /* MVC */,
 				C86A6FC12C240D9C00612375 /* Resources */,
@@ -203,6 +215,22 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		C86A70332C3D95FF00612375 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C86A70342C3D961A00612375 /* CoreData */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C86A70342C3D961A00612375 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C86A70352C3D965D00612375 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86A702E2C3D934400612375 /* AccountingModel.xcdatamodeld in Sources */,
 				C86A6FD22C240F6A00612375 /* ProfileView.swift in Sources */,
 				C86A70012C314C6E00612375 /* SettingsController.swift in Sources */,
 				C86A700F2C329E5700612375 /* OnboardingView.swift in Sources */,
@@ -286,6 +315,8 @@
 				C86A6FCA2C240EDE00612375 /* MainTabBar.swift in Sources */,
 				C86A6FB22C240D8B00612375 /* MainTabBarController.swift in Sources */,
 				C86A70072C31D2EF00612375 /* StructOnboarding.swift in Sources */,
+				C86A70312C3D957B00612375 /* AccountingModel+CoreDataClass.swift in Sources */,
+				C86A70322C3D957B00612375 /* AccountingModel+CoreDataProperties.swift in Sources */,
 				C86A701F2C365F3600612375 /* ExpensesView.swift in Sources */,
 				C86A6FD02C240F5900612375 /* HomeModel.swift in Sources */,
 				C86A701D2C365F2800612375 /* IncomesView.swift in Sources */,
@@ -296,6 +327,7 @@
 				C86A70032C314C7A00612375 /* SettingsModel.swift in Sources */,
 				C86A70112C329F9300612375 /* OnboardingCell.swift in Sources */,
 				C86A6FAE2C240D8B00612375 /* AppDelegate.swift in Sources */,
+				C86A70362C3D965D00612375 /* CoreDataManager.swift in Sources */,
 				C86A6FFF2C314C0E00612375 /* SettingsView.swift in Sources */,
 				C86A70192C365EA400612375 /* ExpensesTabBarController.swift in Sources */,
 				C86A6FD42C240F7D00612375 /* ExpendsAddView.swift in Sources */,
@@ -530,6 +562,20 @@
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C86A702C2C3D934400612375 /* AccountingModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C86A702D2C3D934400612375 /* AccountingModel.xcdatamodel */,
+			);
+			currentVersion = C86A702D2C3D934400612375 /* AccountingModel.xcdatamodel */;
+			name = AccountingModel.xcdatamodeld;
+			path = /Users/aijansaadatova/Desktop/HomeWork2.5month/AccountingModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C86A6FA22C240D8B00612375 /* Project object */;
 }

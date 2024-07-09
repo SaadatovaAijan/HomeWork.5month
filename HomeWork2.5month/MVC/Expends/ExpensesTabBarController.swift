@@ -60,7 +60,6 @@ class ExpensesTabBarController: UITabBarController {
             view.overrideUserInterfaceStyle = .dark
         }
         
-        
     }
     
     @objc func segmentControlValueChanged() {

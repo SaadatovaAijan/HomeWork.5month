@@ -35,7 +35,7 @@ class AddCell: UICollectionViewCell {
         backgroundColor = .clear
     }
     
-    func setup(data: AddCellData) {
+    func setup(data: AccountingModel) {
         titleLabel.text = data.title
         amountLabel.text = String(data.amount) + "c."
     }
